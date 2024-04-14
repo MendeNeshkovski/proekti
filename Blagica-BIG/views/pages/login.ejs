@@ -1,0 +1,165 @@
+<head>
+  
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    
+<header>
+    <div class="row justify-content-between align-items-center" style="height: 50px;">
+        <div class="col-sm-2 col-md-2 col-xl-2 header-logo">
+            <img src="Images/logo-green-rotated.png" alt="">
+        </div>
+        <div class="col-sm-6 col-md-6 col-xl-6">
+            <ul class="navigation-bar" style="list-style: none;">
+                <li class="menu-item">
+                    <a style="text-decoration: none;" href="/">HOME</a>
+                </li>
+                <li class="menu-item">
+                    <a style="text-decoration: none;" href="/about">ABOUT</a>
+                </li>
+                <li class="menu-item dropdown">
+                    <a style="text-decoration: none;" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOP</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown" style="text-decoration: none;" href="/mens-wear">Men's Clothes</a></li>
+                        <li><a class="dropdown" style="text-decoration: none;" href="/womens-wear">Women's Clothes</a></li>
+                        <li><a class="dropdown" style="text-decoration: none;" href="/kids-wear">Kids Clothes</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a style="text-decoration: none;" href="/contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-2 col-md-2 col-xl-2 header-buttons">
+            <button id="dark-mode" class="dark">
+                <i class='bx bxs-moon' ></i>
+            </button>
+            <button id="light-mode" class="light" style="display: none;">
+                <i class='bx bxs-sun' ></i>
+            </button>
+            <button id="profile" class="profile">
+                <i class='bx bxs-user-circle' ></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+ <div class="pattern"></div>
+
+<div class="section">
+    <div class="container">
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center ">
+                  <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                  <label for="reg-log" title="Login/Signup"></label>
+            <div class="card-3d-wrap mx-auto">
+              <div class="card-3d-wrapper">
+                <div class="card-front">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-4 pb-3">Log In</h4>
+                      <div class="form-group">
+                        <input type="email" class="form-style" placeholder="Email">
+                        <i class="input-icon uil uil-at"></i>
+                      </div>	
+                      <div class="form-group mt-2">
+                        <input type="password" class="form-style" placeholder="Password">
+                        <i class="input-icon uil uil-lock-alt"></i>
+                      </div>
+                      <a href="" class="btn mt-4">Login</a>
+                      <p class="mb-0 mt-4 text-center align-items-center">
+                        <button type="button" class="login-with-google-btn" >
+                          Sign in with Google
+                        </button>
+                      </p>
+                        </div>
+                      </div>
+                    </div>
+                <div class="card-back">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-3 pb-3">Sign Up</h4>
+                      <div class="form-group">
+                        <input type="text" class="form-style" placeholder="Full Name">
+                        <i class="input-icon uil uil-user"></i>
+                      </div>	
+                      <div class="form-group mt-2">
+                        <input type="email" class="form-style" placeholder="Email">
+                        <i class="input-icon uil uil-at"></i>
+                      </div>
+                      <div class="form-group mt-2">
+                        <input type="password" class="form-style" placeholder="Password">
+                        <i class="input-icon uil uil-lock-alt"></i>
+                      </div>
+                      <a href="" class="btn mt-4">Sign Up</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="waves">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+    <defs>
+      <linearGradient id="bg">
+        <stop offset="5%" style="stop-color:#A3B18A"></stop>
+        <stop offset="25%" style="stop-color:#588157"></stop>
+        <stop offset="75%" style="stop-color:#3A5A40"></stop>
+        <stop offset="100%" style="stop-color:#344E41"></stop>
+      </linearGradient>
+      <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+    </defs>
+    <g>
+      <use xlink:href='#wave' opacity=".3">
+        <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="10s"
+          calcMode="spline"
+          values="270 230; -334 180; 270 230"
+          keyTimes="0; .5; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+      </use>
+      <use xlink:href='#wave' opacity=".6">
+        <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="8s"
+          calcMode="spline"
+          values="-270 230;243 220;-270 230"
+          keyTimes="0; .6; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+      </use>
+      <use xlink:href='#wave' opacty=".9">
+        <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="6s"
+          calcMode="spline"
+          values="0 230;-140 200;0 230"
+          keyTimes="0; .4; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+      </use>
+    </g>
+    </svg>
+  </div>
+    <script src="/js/login-script.js"></script>
+</body>

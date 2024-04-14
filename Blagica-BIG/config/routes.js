@@ -23,6 +23,7 @@ module.exports.routes = {
   '/about': { view: 'pages/about' },
   '/shop': { view: 'pages/shop' },
   '/contact': { view: 'pages/contact' },
+  '/login': { view: 'pages/login' },
 
   /***************************************************************************
   *                                                                          *

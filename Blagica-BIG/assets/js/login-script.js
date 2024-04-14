@@ -5,12 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const body = document.querySelector('body');
     const header = document.querySelector('header');
     const sections = document.querySelectorAll('section');
+    const pattern = document.querySelector('.pattern');
 
     // Function to toggle dark mode
     function toggleDarkMode() {
         body.classList.toggle('dark-mode');
         header.classList.toggle('dark-mode');
         sections.forEach(section => section.classList.toggle('dark-mode'));
+        pattern.classList.toggle('dark-mode');
     }
 
     // Event listener for dark mode button
