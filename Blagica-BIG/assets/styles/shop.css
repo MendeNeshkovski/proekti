@@ -166,7 +166,7 @@ a {
 
 
 section{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color:var(--main-color) ;
     background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
