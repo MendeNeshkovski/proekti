@@ -1,35 +1,149 @@
 <header>
-    <div class="navigation-bar">
-        <div class="row justify-content-between">
-            <div class="col-sm-3 col-md-3 col-xl-3">
-                <img src="" alt="">
+        <div class="row justify-content-between align-items-center" style="height: 50px;">
+            <div class="col-sm-2 col-md-2 col-xl-2 header-logo">
+                <img src="Images/logo-green-rotated.png" alt="">
             </div>
-
-            <div class="col-sm-6 col-md-6 col-xl-9">
-                <ul style="list-style: none;">
+            <div class="col-sm-6 col-md-6 col-xl-6">
+                <ul class="navigation-bar" style="list-style: none;">
                     <li class="menu-item">
-                        <a href="/">HOME</a>
+                        <a style="text-decoration: none;" href="/">HOME</a>
                     </li>
                     <li class="menu-item">
-                        <a href="/about">ABOUT</a>
+                        <a style="text-decoration: none;" href="/about">ABOUT</a>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <a style="text-decoration: none;" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOP</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown" style="text-decoration: none;" href="/mens-wear">Men's Clothes</a></li>
+                            <li><a class="dropdown" style="text-decoration: none;" href="/womens-wear">Women's Clothes</a></li>
+                            <li><a class="dropdown" style="text-decoration: none;" href="/kids-wear">Kids Clothes</a></li>
+                        </ul>
                     </li>
                     <li class="menu-item">
-                        <a href="/shop">SHOP</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="/contact">CONTACT</a>
+                        <a style="text-decoration: none;" href="/contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-sm-1 col-md-1 col-xl-1">
+            <div class="col-sm-2 col-md-2 col-xl-2 header-buttons">
                 <button id="dark-mode" class="dark">
-
+                    <i class='bx bxs-moon' ></i>
+                </button>
+                <button id="light-mode" class="light" style="display: none;">
+                    <i class='bx bxs-sun' ></i>
                 </button>
                 <button id="profile" class="profile">
-
+                    <i class='bx bxs-user-circle' ></i>
                 </button>
             </div>
         </div>
-    </div>
 </header>
+
+    <section id="hero-section" class="hero-section">
+    <div class="homepage-main">
+        <div class="left">
+            <img src="Images/homepage-left.png" alt="">
+        </div>
+
+        <div class="middle">
+            <div class="image">
+                <img src="Images/logo-green.png" alt="">
+            </div>
+
+            <button class="cssbuttons-io-button">
+                Shop Now
+                <div class="icon">
+                    <i class='bx bxs-cart-alt'></i>
+                </div>
+            </button>              
+        </div>
+
+        <div class="right">
+            <img src="Images/homepage-right.png" alt="">
+        </div>
+        
+
+        
+    
+    </div>
+    <div class="custom-shape-divider-bottom-1712760248">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+   
+</section>
+
+
+
+
+<section class="best-sellers">
+    <div class="main-title">
+        <h1>Best Sellings Products</h1>
+    </div>
+    <div class="sellers">
+        <div class="card">
+            <div class="title">
+                <h1>Best Kids Seller</h1>
+            </div>
+            <div class="product-image">
+                <img src="Images/front-hoodie.png" alt="Eleganza" draggable="false">
+                <img src="Images/back-hoodie.png" alt="Eleganza" draggable="false"/>
+            </div>
+            <div class="product-info">
+                <h2>Eleganza Hoodie</h2>
+                <p>Eleganza First Edition hoodie with top quality material</p>
+                <div class="price">$15.99</div>
+            </div>
+            <button class="cssbuttons-io-button">
+                Shop Now
+                <div class="icon">
+                    <i class='bx bxs-cart-alt'></i>
+                </div>
+            </button> 
+            </div>
+            <div class="card">
+                <div class="title">
+                    <h1>Best Men's Seller</h1>
+                </div>
+                <div class="product-image">
+                    <img src="Images/front-hoodie.png" alt="Eleganza" draggable="false">
+                    <img src="Images/back-hoodie.png" alt="Eleganza" draggable="false"/>
+                </div>
+                <div class="product-info">
+                    <h2>Eleganza Hoodie</h2>
+                    <p>Eleganza First Edition hoodie with top quality material</p>
+                    <div class="price">$20.99</div>
+                </div>
+                <button class="cssbuttons-io-button">
+                    Shop Now
+                    <div class="icon">
+                        <i class='bx bxs-cart-alt'></i>
+                    </div>
+                </button> 
+                </div>
+            <div class="card">
+                <div class="title">
+                    <h1>Best Women's Seller</h1>
+                </div>
+            <div class="product-image">
+                <img src="Images/front-hoodie.png" alt="Eleganza" draggable="false">
+                <img src="Images/back-hoodie.png" alt="Eleganza" draggable="false"/>
+            </div>
+            <div class="product-info">
+                <h2>Eleganza Hoodie</h2>
+                <p>Eleganza First Edition hoodie with top quality material</p>
+                <div class="price">$20.99</div>
+            </div>
+            <button class="cssbuttons-io-button">
+                Shop Now
+                <div class="icon">
+                    <i class='bx bxs-cart-alt'></i>
+                </div>
+            </button> 
+        </div>
+    </div>
+    
+          
+</section>
