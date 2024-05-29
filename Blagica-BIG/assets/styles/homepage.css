@@ -496,7 +496,7 @@ section{
 
 
 @media (max-width: 1439px) {
-    .middle {
+    .homepage-middle {
         height: 700px;
     }
 
@@ -504,11 +504,11 @@ section{
         height: 400px;
     }
     
-    .left {
+    .homepage-left {
         left: 100px;
     }
 
-    .right {
+    .homepage-right {
         right: 100px;
     }
 
@@ -536,11 +536,11 @@ section{
         height: 650px;
     }
 
-    .left {
+    .homepage-left {
         left: 50px;
     } 
     
-    .right {
+    .homepage-right {
        right: 50px; 
     }
 
@@ -553,11 +553,11 @@ section{
 }
 
 @media (max-width: 991.98px) {
-    .left {
+    .homepage-left {
         left: 0px;
     }
 
-    .right {
+    .homepage-right {
         right: 0px;
     }
     
@@ -572,11 +572,11 @@ section{
 }
 
 @media (max-width: 879.98px) {
-    .left {
+    .homepage-left {
         display: none; 
     }
 
-    .right {
+    .homepage-right {
         display: none;
     }
 
