@@ -168,13 +168,10 @@ a {
 section{
     height: 100vh;
     width: 100%;
-    background: repeating-linear-gradient(
-  45deg,
-  #DAD7CD,
-  #DAD7CD 20px,
-  #EAE6DB 20px,
-  #EAE6DB 40px
-);
+    background-color:var(--main-color) ;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px
 }
 
 section.dark-mode {
@@ -204,7 +201,7 @@ section.dark-mode {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--main-color);
+    color: white;
     text-transform: uppercase;
 }
 
@@ -215,6 +212,7 @@ section.dark-mode {
 }
 
 .shopping-cart {
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,17 +237,17 @@ section.dark-mode {
 
 .open-modal-btn:hover {
     letter-spacing: 3px;
-    background-color: hsl(166, 80%, 48%);
+    background-color: var(--shadow-color);
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(166, 80%, 48%) 0px 7px 29px 0px;
+    box-shadow: var(--shadow-color);
   }
   
 
 .open-modal-btn:active {
     letter-spacing: 3px;
-    background-color: hsl(166, 80%, 48%);
+    background-color: var(--shadow-color);
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(166, 80%, 48%) 0px 0px 0px 0px;
+    box-shadow: var(--shadow-color);
     transform: translateY(10px);
     transition: 100ms;
   }
@@ -342,10 +340,11 @@ section.dark-mode {
     flex-direction: column;
     height: 600px;
     width: 100%;
-    border: 2px solid var(--bg-color);
+    color: white;
+    border: 2px solid var(--shadow-color);
     filter: drop-shadow(3px 4px 6px rgba(0,0,0,0.4));
     border-radius: 15px;
-    background-color: var(--bg-color);
+    background-color: var(--shadow-color);
     padding: 10px;
     margin-left: 30px;
   }
