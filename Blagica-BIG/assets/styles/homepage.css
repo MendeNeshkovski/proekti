@@ -182,29 +182,29 @@ section{
     height: 720px;
 }
 
-.left {
+.homepage-left {
     position: absolute;
     left: 200px;
     bottom: 0;
     z-index: 2;
 }
 
-.left img{
+.homepage-left img{
     height: 80vh;
 }
 
-.right {
+.homepage-right {
     position: absolute;
     right: 200px;
     bottom: 0;
     z-index: 2;
 }
 
-.right img{
+.homepage-right img{
     height: 80vh;
 }
 
-.middle {
+.homepage-middle {
     padding-top: 10px;
     width: 100%;
     height: 900px;
@@ -214,7 +214,7 @@ section{
     align-items: center;
 }
 
-.middle .image img {
+.homepage-middle .image img {
     height: 600px;
 }
 
@@ -584,4 +584,126 @@ section{
         display: none;
     }
 
+}
+
+.parts-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.part {
+  flex: 1;
+  display: flex;
+  align-items: stretch;  /* Align items to the bottom */
+  justify-content: center;
+  background-color: #ccc;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.part1 {
+  background-image: url(../images/shop-kids.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.part2 {
+  background-image: url(../images/homepage-left.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.part3 {
+  background-image: url(../images/homepage-right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.part:hover {
+  flex: 1.2;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.part:not(:hover) {
+  flex: 1;
+  z-index: 1;
+}
+
+/* Add only positioning styles to parts-button */
+.parts-button {
+  position: absolute;
+  bottom: 10%;  /* Adjust this value to control vertical positioning */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Styles for the top text */
+.part-text {
+  display: flex;
+  position:absolute;
+  justify-content: center;
+  align-items: center;
+  top: 10%;  /* Adjust this value to control vertical positioning */
+  bottom: 30%;
+  left: 20%;
+  transform: translateX(-50%) rotate(-90deg);  /* Rotate the text vertically */
+  transform-origin: center center;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);  
+  
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+footer.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+footer.logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+footer .col-md-4{
+display: flex;
+justify-content: center;
+align-items: center;
 }
