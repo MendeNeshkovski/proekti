@@ -266,6 +266,7 @@ section.dark-mode {
 }
 .custom-modal-content {
     background-color: white;
+    color: black;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
