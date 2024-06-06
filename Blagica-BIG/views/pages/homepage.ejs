@@ -1,3 +1,10 @@
+<head>
+  
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/homepage.css">
+    <title>Eleganza</title>
+</head>
 <header>
         <div class="row justify-content-between align-items-center" style="height: 50px;">
             <div class="col-sm-2 col-md-2 col-xl-2 header-logo">
@@ -212,3 +219,44 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const darkModeButton = document.getElementById('dark-mode');
+    const moonIcon = document.querySelector('.dark');
+    const sunIcon = document.querySelector('.light');
+    const body = document.querySelector('body');
+    const header = document.querySelector('header');
+    const sections = document.querySelectorAll('section');
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        body.classList.toggle('dark-mode');
+        header.classList.toggle('dark-mode');
+        sections.forEach(section => section.classList.toggle('dark-mode'));
+    }
+
+    // Event listener for dark mode button
+    darkModeButton.addEventListener('click', function() {
+        // Toggle dark mode
+        toggleDarkMode();
+        
+        // Toggle visibility of moon and sun icons
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'block';
+    });
+
+    // Event listener for sun icon (light mode)
+    sunIcon.addEventListener('click', function() {
+        // Toggle dark mode
+        toggleDarkMode();
+        
+        // Toggle visibility of moon and sun icons
+        moonIcon.style.display = 'inline-block';
+        sunIcon.style.display = 'none';
+    });
+});
+  </script>
+
+  <script src="/js/homepage-script.js"></script>
