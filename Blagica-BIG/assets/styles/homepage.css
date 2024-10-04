@@ -177,6 +177,26 @@ section{
 
 }
 
+.hero-section.dark-mode {
+  background: repeating-linear-gradient(
+      45deg,
+      #1a1a1a,
+      #1a1a1a 20px,
+      #1d1d1d 20px,
+      #1d1d1d 40px
+    );
+    
+
+  color: #fff !important;
+}
+
+.best-sellers.dark-mode{
+  background-color:var(--main-color) ;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px
+}
+
 .homepage-main {
     display: flex;
     height: 720px;
@@ -298,18 +318,7 @@ section{
     background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
 }
 
-.hero-section.dark-mode {
-    background: repeating-linear-gradient(
-        45deg,
-        #1a1a1a,
-        #1a1a1a 20px,
-        #1d1d1d 20px,
-        #1d1d1d 40px
-      );
-      
 
-    color: #fff !important;
-}
 
 
 .discount-row {
